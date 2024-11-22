@@ -236,10 +236,12 @@ const AppContent = () => {
     return <SplashScreen />;
   }
 
+
+  
   return (
-    <NavigationContainer>
-      {isAuthenticated ? <HomeStack /> : <AuthStack />}
-    </NavigationContainer>
+    <NavigationContainer key={isAuthenticated ? 'auth' : 'home'}>
+  {isAuthenticated ? <HomeStack /> : <AuthStack />}
+</NavigationContainer>
   );
 };
 
