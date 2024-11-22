@@ -213,7 +213,7 @@ function HomeStack() {
     );
 }
 const AppContent = () => {
-  const { isAuthenticated } = useContext(AuthContext);
+  const { isAuthenticated, setIsAuthenticated  } = useContext(AuthContext);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
