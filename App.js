@@ -9,9 +9,9 @@ import { AuthContext, AuthProvider } from './contexts/AuthContext'; // Import Au
 
 export default function App() {
   return (
-    <AuthContext.Provider>
+    <AuthProvider>
       <AppContent />
-    </AuthContext.Provider>
+    </AuthProvider>
   );
 }
 
