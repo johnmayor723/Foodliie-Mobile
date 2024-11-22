@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ActivityIndicator, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+import { AuthContext } from '../contexts/AuthContext'; // Import the AuthContext
 
-const AuthScreen = ({ navigation }) => {
+const AuthScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isLoading, setIsLoading] = useState(false); // Loading state for loader
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { login } = useContext(AuthContext); // Access the login function from the AuthContext
+
+ 
 
   const handleLogin = async () => {
     setIsLoading(true); // Show loader
@@ -26,7 +31,8 @@ const AuthScreen = ({ navigation }) => {
 
       Alert.alert('Login successful!', `Welcome ${user.name}`);
       setIsLoading(false); // Hide loader
-      navigation.replace('Main'); // Navigate to Home or another screen after auth
+      login();
+      //navigation.replace('Main'); // Navigate to Home or another screen after auth
     } catch (error) {
       setIsLoading(false); // Hide loader
       console.error(error);
