@@ -1,44 +1,40 @@
 {
   "expo": {
-    "name": "FoodDeck",
-    "slug": "FoodDeck",
+    "name": "FoodDeck-Pro",
+    "slug": "fooddeck-pro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/appicon.png",
+    "icon": "./assets/fooddeck-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/mainlogo.png",
+      "image": "./assets/fooddeck-logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#fff"
+      "backgroundColor": "#ffffff"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.johnmayor1582.FoodDeck",
+      "bundleIdentifier": "com.johnmayor1582.FoodDeckPro",
       "infoPlist": {
-        "NSCameraUsageDescription": "We need access to your camera to take photos.",
-        "NSLocationWhenInUseUsageDescription": "We need your location to show nearby places.",
-        "NSMicrophoneUsageDescription": "We need access to your microphone to record audio."
-      }
+        "NSLocationWhenInUseUsageDescription": "We need your location to help with accurate deliveries."
+      },
+      "buildNumber": "1.0.0"
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#fff"
+        "backgroundColor": "#ffffff"
       },
-      "permissions": [
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "ACCESS_FINE_LOCATION"
-      ],
-      "package": "com.johnmayor1582.FoodDeck"
+      "permissions": ["ACCESS_FINE_LOCATION"],
+      "package": "com.johnmayor1582.FoodDeckPro",
+      "version": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "359681de-da4a-41ac-a383-8d19f13e0575"
+        "projectId": "8a7c9a1b-3c02-4d90-b5ab-1c2fdd27fdee"
       }
     }
   }
