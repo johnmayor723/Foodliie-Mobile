@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FoodDeck-Pro",
-    "slug": "FoodDeck-Pro",
+    "name": "FoodDeck",
+    "slug": "FoodDeck",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/appicon.png",
