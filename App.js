@@ -8,6 +8,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AuthContext, AuthProvider } from './contexts/AuthContext';
 
 // Import Screens
+import AboutScreen from "./screens/AboutScreen.js";
 import SplashScreen from './screens/SplashScreen';
 import AuthScreen from './screens/AuthScreen';
 import SignUpScreen from './screens/SignUpScreen';
@@ -77,6 +78,7 @@ function DrawerNavigator() {
       }}
     >
       <Drawer.Screen name="DrawerHome" component={BottomTabNavigator} options={{ title: "Menu", headerShown: true }} />
+      <Drawer.Screen name="DrawerAbout" component={AboutScreen} options={{ title: "About", headerShown: true }} />
       <Drawer.Screen name="DrawerProfile" component={UserProfileScreen} options={{ title: "Profile", headerShown: true }} />
       <Drawer.Screen name="DrawerContact" component={HelpScreen} options={{ title: "Help", headerShown: true }} />
       <Drawer.Screen name="DrawerTracking" component={TrackingScreen} options={{ title: "Tracking", headerShown: true }} />
@@ -146,4 +148,4 @@ export default function App() {
       </NavigationContainer>
     </AuthProvider>
   );
-  }
+}
