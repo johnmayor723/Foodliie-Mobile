@@ -16,7 +16,7 @@ const SignupScreen = ({ navigation }) => {
     setIsLoading(true); // Show loader
 
     try {
-      const endpoint = 'https://pantry-hub-server.onrender.com/api/auth/register';
+      const endpoint = 'http://api.fooddeckpro.com.ng/api/auth/register';
       const payload = { name, email, password };
 
       // Make the API request using axios
@@ -42,10 +42,10 @@ const SignupScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Logo */}
-      <Image source={require('../assets/mainlogo.png')} style={styles.logo} />
+      <Image source={require('../assets/foodliielogo.jpg')} style={styles.logo} />
 
       {/* Welcome text */}
-      <Text style={styles.welcomeText}>Join FoodDeck</Text>
+      <Text style={styles.welcomeText}>Join Foodliie</Text>
 
       {/* Name Input */}
       <TextInput
