@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     padding: 15,
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#DFFF00',
     borderWidth: 1,
     borderColor: '#2D7B30',
     borderRadius: 25, // Rounded corners
