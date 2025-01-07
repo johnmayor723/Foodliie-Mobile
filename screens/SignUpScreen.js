@@ -42,7 +42,7 @@ const SignupScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Logo */}
-      <Image source={require('../assets/foodliielogo.jpg')} style={styles.logo} />
+      <Image source={require('../assets/foodliie-icon-logo.jpg')} style={styles.logo} />
 
       {/* Welcome text */}
       <Text style={styles.welcomeText}>Join Foodliie</Text>
