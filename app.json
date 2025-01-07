@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "FoodDeck",
-    "slug": "FoodDeck",
+    "name": "Foodliie",
+    "slug": "Foodliie",
     "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/appicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/mainlogo.png",
+      "image": "./assets/foodliie-icon-logo.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#fff"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.fooddeck3.pro",
+      "bundleIdentifier": "com.foodliie.pro",
       "version": "2.0.0",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "We need your location to show nearby places."
@@ -22,7 +22,7 @@
     "android": {
       "versionCode": 2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/foodliie-icon-logo.jpg",
         "backgroundColor": "#fff"
       },
       "permissions": [
@@ -33,7 +33,7 @@
       "package": "com.fooddeck3.pro"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/foodliie-icon-logo.jpg"
     },
     "extra": {
       "eas": {
