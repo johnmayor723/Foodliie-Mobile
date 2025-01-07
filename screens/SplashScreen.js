@@ -15,7 +15,7 @@ const SplashScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Image
-                source={require('../assets/foodliiel9go.jpg')} // Make sure you have a logo in the assets folder
+                source={require('../assets/foodliie-icon-logo.jpg')} // Make sure you have a logo in the assets folder
                 style={styles.logo}
             />
             <Text style={styles.title}>Welcome to Foodliie</Text>
